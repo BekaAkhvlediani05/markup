@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: rgb(75, 13, 13);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 0 48px;
+  box-sizing: border-box;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+section{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 100px;
+}
+
+.section-shopButton {
+  width: 200px;
+  height: 48px;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 120px;
+}
+
+.section-articleWrapper {
+  display: flex;
+  gap: 48px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 96px;
+  border-radius: 12px;
+  background-color: rgb(211, 207, 207);
+  gap: 8px;
+}
+
+.section-cartButton {
+  height: 32px;
+  width: 100px;
+  background-color: rgb(90, 26, 26);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(90, 26, 26); 
+  color: white;           
+  padding: 24px 0;        
+  text-align: center;
+       
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content a {
+  color: white;          
+  text-decoration: none;  
+  margin: 0 12px;         
+}
+
+.footer-content a:hover {
+  text-decoration: underline; 
+}
+
+.footer-copyright p {
+  margin: 12px 0 0;       
+  font-size: 14px;        
+}
+
+@media (max-width:1023px) {
+  .section-articleWrapper {
+    flex-direction: column;
+  }
+
+  .section-shopButton{
+    margin-bottom: 48px;
+    margin-top: 48px;
+  }
+
+  footer {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width:767px) {
+header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+}
