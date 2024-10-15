@@ -51,6 +51,7 @@ button {
   width: 260px;
   font-size: 18px;
   color: white;
+  cursor: pointer;
 }
 
 @media (max-width:1199px) {
